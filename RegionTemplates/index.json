@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "generated_at": "2026-09-19T18:18:51.414978+00:00",
+  "genres": [
+    "Afro House",
+    "Ambient",
+    "Bass House",
+    "Breakbeat",
+    "Chillout",
+    "Cinematic",
+    "Dancehall",
+    "Deep House",
+    "Disco House",
+    "Drum and Bass",
+    "Dubstep",
+    "Electro House",
+    "Funky House",
+    "Future Bass",
+    "Future House",
+    "Hardcore",
+    "Hardstyle",
+    "Hip-Hop",
+    "House",
+    "Jersey Club",
+    "Latin House",
+    "Lounge",
+    "Melodic Techno",
+    "Minimal",
+    "Moombahton",
+    "Nu Disco",
+    "Organic House",
+    "Piano House",
+    "Pop",
+    "Progressive House",
+    "R&B",
+    "Reggae",
+    "Soulful House",
+    "Synthwave",
+    "Tech House",
+    "Techno",
+    "Trance",
+    "Trap",
+    "Tropical House",
+    "UK Garage"
+  ],
+  "templates": [
+    {
+      "genre": "House",
+      "name": "Classic Intro.rgti",
+      "path": "RegionTemplates/House/Classic Intro.rgti",
+      "sha": "1fec3dae394d5bbdcdc9e6e7ea9631f28fd59170"
+    },
+    {
+      "genre": "House",
+      "name": "Future House.rgti",
+      "path": "RegionTemplates/House/Future House.rgti",
+      "sha": "df041d7c4aeee359888cd3c0c240d4539f5fe7c7"
+    },
+    {
+      "genre": "House",
+      "name": "Pop House.rgti",
+      "path": "RegionTemplates/House/Pop House.rgti",
+      "sha": "199a281cf417b4e766e0c5f8266d37306b2857fa"
+    },
+    {
+      "genre": "Techno",
+      "name": "Dark Intro.rgti",
+      "path": "RegionTemplates/Techno/Dark Intro.rgti",
+      "sha": "f37c1e97a96f85684fc5b39f5b5d28c3e271b300"
+    }
+  ]
+}
