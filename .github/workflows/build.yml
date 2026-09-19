@@ -22,7 +22,7 @@ jobs:
         shell: pwsh
         run: >-
           cmake -S . -B build
-          -G "Visual Studio 18 2025"
+          -G "Visual Studio 18 2026"
           -A x64
           -DCMAKE_BUILD_TYPE=Release
           -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake"
