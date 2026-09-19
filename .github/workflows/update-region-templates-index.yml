@@ -14,44 +14,61 @@ jobs:
   build-index:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out repository history
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Build static template index
+      - name: Build static template index with dates
         shell: bash
         run: |
           python3 - <<'PY'
           import hashlib
           import json
+          import subprocess
           from datetime import datetime, timezone
           from pathlib import Path
 
           root = Path("RegionTemplates")
-          genres = sorted(path.name for path in root.iterdir() if path.is_dir())
+
+          def git_log(args, path):
+              result = subprocess.run(
+                  ["git", "log", *args, "--", path.as_posix()],
+                  check=False, capture_output=True, text=True,
+              )
+              return [line.strip() for line in result.stdout.splitlines() if line.strip()]
 
           def git_blob_sha(data):
-              header = ("blob %d" % len(data) + chr(0)).encode("utf-8")
+              header = f"blob {len(data)}\0".encode("utf-8")
               return hashlib.sha1(header + data).hexdigest()
 
           templates = []
-          for file_path in root.rglob("*.rgti"):
+          for file_path in root.rglob("*.rgti"):          
               relative = file_path.relative_to(root).as_posix()
+              changed = git_log(["-1", "--format=%cI"], file_path)
+              created = git_log(["--reverse", "--diff-filter=A", "--format=%cI"], file_path)
+              updated_at = changed[0] if changed else ""
+              created_at = created[0] if created else updated_at
+              data = file_path.read_bytes()
               templates.append({
                   "genre": relative.split("/")[0],
                   "name": file_path.name,
                   "path": f"{root.as_posix()}/{relative}",
-                  "sha": git_blob_sha(file_path.read_bytes()),
+                  "sha": git_blob_sha(data),
+                  "size": len(data),
+                  "created_at": created_at,
+                  "updated_at": updated_at,
               })
           templates.sort(key=lambda item: item["path"])
 
           index = {
-              "version": 1,
+              "version": 2,
               "generated_at": datetime.now(timezone.utc).isoformat(),
-              "genres": genres,
+              "genres": sorted(path.name for path in root.iterdir() if path.is_dir()),
               "templates": templates,
           }
           (root / "index.json").write_text(
-              json.dumps(index, ensure_ascii=False, indent=2) + chr(10),
+              json.dumps(index, ensure_ascii=False, indent=2) + "\n",
               encoding="utf-8",
           )
           PY
