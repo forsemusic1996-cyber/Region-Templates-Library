@@ -16,7 +16,7 @@ jobs:
 
       - name: Install curl
         shell: pwsh
-        run: vcpkg install "curl:x64-windows-static"
+        run: vcpkg install "curl:x64-mingw-static"
 
       - name: Configure
         shell: pwsh
@@ -25,7 +25,7 @@ jobs:
           -G Ninja
           -DCMAKE_BUILD_TYPE=Release
           -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake"
-          -DVCPKG_TARGET_TRIPLET=x64-windows-static
+          -DVCPKG_TARGET_TRIPLET=x64-mingw-static
 
       - name: Build
         run: cmake --build build --config Release
