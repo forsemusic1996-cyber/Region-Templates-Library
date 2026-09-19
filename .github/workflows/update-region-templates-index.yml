@@ -1,0 +1,66 @@
+name: Update Region Templates index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "RegionTemplates/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build static template index
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          root = Path("RegionTemplates")
+          genres = sorted(path.name for path in root.iterdir() if path.is_dir())
+
+          def git_blob_sha(data):
+              header = ("blob %d" % len(data) + chr(0)).encode("utf-8")
+              return hashlib.sha1(header + data).hexdigest()
+
+          templates = []
+          for file_path in root.rglob("*.rgti"):
+              relative = file_path.relative_to(root).as_posix()
+              templates.append({
+                  "genre": relative.split("/")[0],
+                  "name": file_path.name,
+                  "path": f"{root.as_posix()}/{relative}",
+                  "sha": git_blob_sha(file_path.read_bytes()),
+              })
+          templates.sort(key=lambda item: item["path"])
+
+          index = {
+              "version": 1,
+              "generated_at": datetime.now(timezone.utc).isoformat(),
+              "genres": genres,
+              "templates": templates,
+          }
+          (root / "index.json").write_text(
+              json.dumps(index, ensure_ascii=False, indent=2) + chr(10),
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Commit updated index
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add RegionTemplates/index.json
+          git diff --cached --quiet || git commit -m "Update RegionTemplates index"
+          git push
