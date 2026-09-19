@@ -20,6 +20,13 @@ target_link_libraries(RegionTemplatesNet PRIVATE CURL::libcurl)
 if(WIN32)
   target_link_libraries(RegionTemplatesNet PRIVATE ws2_32 crypt32 wldap32 normaliz)
   target_compile_definitions(RegionTemplatesNet PRIVATE _WIN32_WINNT=0x0601)
+  if(MINGW)
+    target_link_options(RegionTemplatesNet PRIVATE
+      -static-libgcc
+      -static-libstdc++
+      -Wl,-Bstatic -lwinpthread -Wl,-Bdynamic
+    )
+  endif()
   set_target_properties(RegionTemplatesNet PROPERTIES PREFIX "" SUFFIX ".dll")
 elseif(APPLE)
   set_target_properties(RegionTemplatesNet PROPERTIES PREFIX "" SUFFIX ".dylib")
