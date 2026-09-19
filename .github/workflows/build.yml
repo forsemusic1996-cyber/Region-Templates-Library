@@ -1,0 +1,82 @@
+name: Build Region Templates native sync
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install curl
+        shell: pwsh
+        run: vcpkg install "curl[schannel]:x64-windows-static"
+
+      - name: Configure
+        shell: pwsh
+        run: >-
+          cmake -S . -B build
+          -G Ninja
+          -DCMAKE_BUILD_TYPE=Release
+          -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake"
+          -DVCPKG_TARGET_TRIPLET=x64-windows-static
+
+      - name: Build
+        run: cmake --build build --config Release
+
+      - name: Package Windows artifact
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force artifact | Out-Null
+          Copy-Item build/RegionTemplatesNet.dll artifact/
+          Copy-Item "Region Templates - Fast Sync.lua" artifact/
+          Compress-Archive -Path artifact/* -DestinationPath RegionTemplatesNet-windows-x64.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RegionTemplatesNet-windows-x64
+          path: RegionTemplatesNet-windows-x64.zip
+
+  macos:
+    strategy:
+      matrix:
+        include:
+          - arch: x86_64
+            runner: macos-13
+          - arch: arm64
+            runner: macos-14
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install curl
+        run: HOMEBREW_NO_AUTO_UPDATE=1 brew install curl || true
+
+      - name: Configure
+        run: >-
+          cmake -S . -B build
+          -G Ninja
+          -DCMAKE_BUILD_TYPE=Release
+          -DCMAKE_OSX_ARCHITECTURES=${{ matrix.arch }}
+          -DCURL_ROOT=$(brew --prefix curl)
+
+      - name: Build
+        run: cmake --build build --config Release
+
+      - name: Package macOS artifact
+        run: |
+          mkdir -p artifact
+          cp build/RegionTemplatesNet.dylib artifact/
+          cp "Region Templates - Fast Sync.lua" artifact/
+          ditto -c -k --sequesterRsrc --keepParent artifact RegionTemplatesNet-macos-${{ matrix.arch }}.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RegionTemplatesNet-macos-${{ matrix.arch }}
+          path: RegionTemplatesNet-macos-${{ matrix.arch }}.zip
