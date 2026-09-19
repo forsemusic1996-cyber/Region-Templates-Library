@@ -16,7 +16,7 @@ jobs:
 
       - name: Install curl
         shell: pwsh
-        run: vcpkg install "curl[schannel]:x64-windows-static"
+        run: vcpkg install "curl:x64-windows-static"
 
       - name: Configure
         shell: pwsh
@@ -35,7 +35,7 @@ jobs:
         run: |
           New-Item -ItemType Directory -Force artifact | Out-Null
           Copy-Item build/RegionTemplatesNet.dll artifact/
-          Copy-Item "Region Templates - Fast Sync.lua" artifact/
+          if (Test-Path "Region Templates - Fast Sync.lua") { Copy-Item "Region Templates - Fast Sync.lua" artifact/ }
           Compress-Archive -Path artifact/* -DestinationPath RegionTemplatesNet-windows-x64.zip
 
       - uses: actions/upload-artifact@v4
@@ -73,7 +73,7 @@ jobs:
         run: |
           mkdir -p artifact
           cp build/RegionTemplatesNet.dylib artifact/
-          cp "Region Templates - Fast Sync.lua" artifact/
+          if [ -f "Region Templates - Fast Sync.lua" ]; then cp "Region Templates - Fast Sync.lua" artifact/; fi
           ditto -c -k --sequesterRsrc --keepParent artifact RegionTemplatesNet-macos-${{ matrix.arch }}.zip
 
       - uses: actions/upload-artifact@v4
