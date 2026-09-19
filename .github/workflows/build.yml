@@ -16,16 +16,17 @@ jobs:
 
       - name: Install curl
         shell: pwsh
-        run: vcpkg install "curl:x64-mingw-static"
+        run: vcpkg install "curl:x64-windows-static"
 
       - name: Configure
         shell: pwsh
         run: >-
           cmake -S . -B build
-          -G Ninja
+          -G "Visual Studio 17 2022"
+          -A x64
           -DCMAKE_BUILD_TYPE=Release
           -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake"
-          -DVCPKG_TARGET_TRIPLET=x64-mingw-static
+          -DVCPKG_TARGET_TRIPLET=x64-windows-static
 
       - name: Build
         run: cmake --build build --config Release
@@ -34,7 +35,7 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force artifact | Out-Null
-          Copy-Item build/RegionTemplatesNet.dll artifact/
+          Copy-Item build/Release/RegionTemplatesNet.dll artifact/reaper_regiontemplatesnet-x64.dll
           if (Test-Path "Region Templates - Fast Sync.lua") { Copy-Item "Region Templates - Fast Sync.lua" artifact/ }
           Compress-Archive -Path artifact/* -DestinationPath RegionTemplatesNet-windows-x64.zip
 
@@ -72,7 +73,7 @@ jobs:
       - name: Package macOS artifact
         run: |
           mkdir -p artifact
-          cp build/RegionTemplatesNet.dylib artifact/
+          cp build/RegionTemplatesNet.dylib artifact/reaper_regiontemplatesnet-${{ matrix.arch }}.dylib
           if [ -f "Region Templates - Fast Sync.lua" ]; then cp "Region Templates - Fast Sync.lua" artifact/; fi
           ditto -c -k --sequesterRsrc --keepParent artifact RegionTemplatesNet-macos-${{ matrix.arch }}.zip
 
