@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-19T18:18:51.414978+00:00",
+  "generated_at": "2026-09-19T18:21:59.974104+00:00",
   "genres": [
     "Afro House",
     "Ambient",
@@ -44,6 +44,18 @@
     "UK Garage"
   ],
   "templates": [
+    {
+      "genre": "Breakbeat",
+      "name": "Future House.rgti",
+      "path": "RegionTemplates/Breakbeat/Future House.rgti",
+      "sha": "df041d7c4aeee359888cd3c0c240d4539f5fe7c7"
+    },
+    {
+      "genre": "Breakbeat",
+      "name": "Pop House.rgti",
+      "path": "RegionTemplates/Breakbeat/Pop House.rgti",
+      "sha": "199a281cf417b4e766e0c5f8266d37306b2857fa"
+    },
     {
       "genre": "House",
       "name": "Classic Intro.rgti",
