@@ -208,12 +208,12 @@ double HttpRelease(double id)
   return g_jobs.erase(static_cast<int>(id)) ? 1 : 0;
 }
 
-const char kDefHttpStart[] = "double\\0char*,char*\\0url,target\\0Start an asynchronous Region Templates HTTP download\\0";
-const char kDefHttpPoll[] = "double\\0double\\0job\\0Return 0 while pending, 1 on success, -1 on failure\\0";
-const char kDefHttpError[] = "char*\\0double\\0job\\0Return the error text for a Region Templates download\\0";
-const char kDefHttpWait[] = "double\\0double\\0job\\0Wait for a Region Templates HTTP download to finish\\0";
-const char kDefHttpCancel[] = "double\\0double\\0job\\0Cancel a Region Templates HTTP download\\0";
-const char kDefHttpRelease[] = "double\\0double\\0job\\0Release a completed Region Templates HTTP job\\0";
+const char kDefHttpStart[] = "double\0char*,char*\0url,target\0Start an asynchronous Region Templates HTTP download\0";
+const char kDefHttpPoll[] = "double\0double\0job\0Return 0 while pending, 1 on success, -1 on failure\0";
+const char kDefHttpError[] = "char*\0double\0job\0Return the error text for a Region Templates download\0";
+const char kDefHttpWait[] = "double\0double\0job\0Wait for a Region Templates HTTP download to finish\0";
+const char kDefHttpCancel[] = "double\0double\0job\0Cancel a Region Templates HTTP download\0";
+const char kDefHttpRelease[] = "double\0double\0job\0Release a completed Region Templates HTTP job\0";
 
 // REAPER needs APIvararg adapters in addition to API_ and APIdef_ for ReaScripts.
 thread_local double g_vararg_result = 0.0;
