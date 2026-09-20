@@ -1,4 +1,4 @@
-#include "include/reaper_plugin_min.h"
+#include "../include/reaper_plugin_min.h"
 #include <map>
 #include <string>
 #include <fstream>
