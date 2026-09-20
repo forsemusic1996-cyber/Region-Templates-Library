@@ -11,7 +11,7 @@ jobs:
       - name: Fetch pinned libcurl source
         shell: pwsh
         run: |
-          Invoke-WebRequest https://curl.se/download/curl-8.22.0.tar.xz -OutFile curl.tar.xz
+          Invoke-WebRequest https://github.com/curl/curl/releases/download/curl-8_22_0/curl-8.22.0.tar.xz -OutFile curl.tar.xz -TimeoutSec 120
           $hash = (Get-FileHash curl.tar.xz -Algorithm SHA256).Hash
           if ($hash -ne 'F7EF3AE8A22E521F289803FE93543EB64C329B58AA73A9E224DFD915A2A5F4F7') { throw 'curl source hash mismatch' }
           tar -xf curl.tar.xz
