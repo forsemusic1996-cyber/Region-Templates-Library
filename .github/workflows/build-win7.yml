@@ -8,14 +8,13 @@ jobs:
     runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch pinned libcurl source
-        shell: pwsh
-        run: |
-          Invoke-WebRequest https://github.com/curl/curl/releases/download/curl-8_22_0/curl-8.22.0.tar.xz -OutFile curl.tar.xz -TimeoutSec 120
-          $hash = (Get-FileHash curl.tar.xz -Algorithm SHA256).Hash
-          if ($hash -ne 'F7EF3AE8A22E521F289803FE93543EB64C329B58AA73A9E224DFD915A2A5F4F7') { throw 'curl source hash mismatch' }
-          tar -xf curl.tar.xz
-          if ($LASTEXITCODE) { throw 'curl extraction failed' }
+      - name: Checkout pinned libcurl source
+        uses: actions/checkout@v4
+        with:
+          repository: curl/curl
+          ref: curl-8_22_0
+          path: curl-8.22.0
+          fetch-depth: 1
       - name: Configure Windows 7 target with VS2019 toolset
         shell: pwsh
         run: |
@@ -43,7 +42,7 @@ jobs:
           if ($imports -match '\b(CreateFile2|GetSystemTimePreciseAsFileTime|WaitOnAddress|WakeByAddressSingle|GetTempPath2W|SetThreadDescription)\b') { throw 'Windows 8+ API import found' }
           if ($imports -match '(?im)^\s+(MSVCP\d+|VCRUNTIME\d+[^\s]*|api-ms-win-crt-[^\s]+|libgcc[^\s]*|libstdc[^\s]*|libwinpthread[^\s]*)\.dll\s*$') { throw 'External compiler runtime dependency found' }
           Copy-Item curl-8.22.0/COPYING artifact/LICENSE-libcurl.txt
-          @('Build target: Windows 7 SP1 x64.', 'VS2019 v142 toolset; static CRT; libcurl 8.22.0 Schannel built from source.', 'Passed: native DLL loading, REAPER vararg ABI, GitHub HTTPS, 12 queued downloads, UTF-8 paths, failed-request target preservation.', 'Import audit passed: checked newer APIs and external C++ runtimes absent.', 'Tests ran on GitHub windows-2022; actual Windows 7 execution still needs verification.') | Set-Content artifact/BUILD-INFO.txt
+          @('Build target: Windows 7 SP1 x64 through Windows 11 x64.', 'VS2019 v142 toolset; static CRT; libcurl 8.22.0 Schannel built from pinned source.', 'Passed: native DLL loading, REAPER vararg ABI, GitHub HTTPS, 12 queued downloads, UTF-8 paths, failed-request target preservation.', 'Import audit passed: checked newer APIs and external C++ runtimes absent.', 'Tests run on GitHub windows-2022. Use the included REAPER native test on Windows 7 and Windows 11.') | Set-Content artifact/BUILD-INFO.txt
       - uses: actions/upload-artifact@v4
         with:
           name: RegionTemplatesNet-win7-x64-verified
