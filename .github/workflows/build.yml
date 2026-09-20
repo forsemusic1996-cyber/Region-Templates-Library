@@ -1,13 +1,19 @@
-name: Build verified Windows 7 native sync
+name: Build Region Templates native sync
+
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+
 permissions:
   contents: read
+
 jobs:
   windows7-x64:
     runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
+
       - name: Checkout pinned libcurl source
         uses: actions/checkout@v4
         with:
@@ -15,13 +21,16 @@ jobs:
           ref: curl-8_22_0
           path: curl-8.22.0
           fetch-depth: 1
-      - name: Configure Windows 7 target with VS2019 toolset
+
+      - name: Configure Windows 7-compatible build
         shell: pwsh
         run: |
-          cmake -S . -B build-win7 -G 'Visual Studio 17 2022' -A x64 -T v142 -DRT_CURL_SOURCE="$pwd/curl-8.22.0" -DCMAKE_SYSTEM_VERSION=10.0
+          cmake -S NativeSync -B build-win7 -G 'Visual Studio 17 2022' -A x64 -T v142 -DRT_CURL_SOURCE="$pwd/curl-8.22.0" -DCMAKE_SYSTEM_VERSION=10.0
           if ($LASTEXITCODE) { throw 'configure failed' }
+
       - name: Build DLL
         run: cmake --build build-win7 --config Release --parallel 4
+
       - name: Audit imports and test actual native HTTPS
         shell: cmd
         run: |
@@ -30,11 +39,12 @@ jobs:
           mkdir artifact
           copy build-win7\Release\RegionTemplatesNet.dll artifact\reaper_regiontemplatesnet-x64.dll
           dumpbin /imports artifact\reaper_regiontemplatesnet-x64.dll > artifact\imports.txt
-          cl /nologo /EHsc /std:c++17 /MT /D_WIN32_WINNT=0x0601 native_smoke.cpp /Fe:native_smoke.exe
+          cl /nologo /EHsc /std:c++17 /MT /D_WIN32_WINNT=0x0601 NativeSync\tests\native_smoke.cpp /Fe:native_smoke.exe
           if errorlevel 1 exit /b 1
           native_smoke.exe artifact\reaper_regiontemplatesnet-x64.dll > artifact\native-test.txt 2>&1
           if errorlevel 1 (type artifact\native-test.txt & exit /b 1)
           type artifact\native-test.txt
+
       - name: Reject incompatible imports
         shell: pwsh
         run: |
@@ -43,10 +53,12 @@ jobs:
           if ($imports -match '(?im)^\s+(MSVCP\d+|VCRUNTIME\d+[^\s]*|api-ms-win-crt-[^\s]+|libgcc[^\s]*|libstdc[^\s]*|libwinpthread[^\s]*)\.dll\s*$') { throw 'External compiler runtime dependency found' }
           Copy-Item curl-8.22.0/COPYING artifact/LICENSE-libcurl.txt
           @('Build target: Windows 7 SP1 x64 through Windows 11 x64.', 'VS2019 v142 toolset; static CRT; libcurl 8.22.0 Schannel built from pinned source.', 'Passed: native DLL loading, REAPER vararg ABI, GitHub HTTPS, 12 queued downloads, UTF-8 paths, failed-request target preservation.', 'Import audit passed: checked newer APIs and external C++ runtimes absent.', 'Tests run on GitHub windows-2022. Use the included REAPER native test on Windows 7 and Windows 11.') | Set-Content artifact/BUILD-INFO.txt
+
       - uses: actions/upload-artifact@v4
         with:
           name: RegionTemplatesNet-win7-x64-verified
           path: artifact/
+
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
