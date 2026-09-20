@@ -1,0 +1,41 @@
+name: Generate 100 Test templates
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create 100 valid Region Templates files
+        shell: bash
+        run: |
+          set -euo pipefail
+          folder="RegionTemplates/Test"
+          mkdir -p "$folder"
+          for number in $(seq -w 1 100); do
+            cat > "$folder/Test Template ${number}.rgti" <<EOF
+          [RegionTemplates]
+          version=2.0
+          type=item
+          format=qn
+          date=2026-09-20 16:00:00
+          [DATA]
+          Test Template ${number} Arrangement<SEP>0<SEP>QN3:1:region:{{0.0000000000}{32.0000000000}{Intro}{0}{0}}{{32.0000000000}{96.0000000000}{Verse}{0}{0}}{{96.0000000000}{160.0000000000}{Chorus}{0}{0}}{{160.0000000000}{192.0000000000}{Outro}{0}{0}}
+          EOF
+          done
+
+      - name: Commit the load-test templates
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add RegionTemplates/Test
+          git diff --cached --quiet && exit 0
+          git commit -m "Add 100 Test templates for native sync load test"
+          git push
