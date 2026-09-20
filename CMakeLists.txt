@@ -12,6 +12,7 @@ if(RT_CURL_SOURCE)
   set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
   set(BUILD_STATIC_LIBS ON CACHE BOOL "" FORCE)
   set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
+  set(CURL_STATIC_CRT ON CACHE BOOL "" FORCE)
   set(CURL_TARGET_WINDOWS_VERSION "0x0601" CACHE STRING "" FORCE)
   set(CURL_USE_SCHANNEL ON CACHE BOOL "" FORCE)
   set(CURL_USE_OPENSSL OFF CACHE BOOL "" FORCE)
@@ -26,8 +27,10 @@ if(RT_CURL_SOURCE)
   set(CURL_DISABLE_LDAPS ON CACHE BOOL "" FORCE)
   set(HTTP_ONLY ON CACHE BOOL "" FORCE)
   add_subdirectory("${RT_CURL_SOURCE}" curl-build)
+  set(RT_CURL_TARGET libcurl)
 else()
   find_package(CURL REQUIRED)
+  set(RT_CURL_TARGET CURL::libcurl)
 endif()
 
 add_library(RegionTemplatesNet SHARED
@@ -38,7 +41,7 @@ target_include_directories(RegionTemplatesNet PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-target_link_libraries(RegionTemplatesNet PRIVATE CURL::libcurl)
+target_link_libraries(RegionTemplatesNet PRIVATE ${RT_CURL_TARGET})
 
 if(WIN32)
   target_link_libraries(RegionTemplatesNet PRIVATE ws2_32 crypt32 wldap32 normaliz)
