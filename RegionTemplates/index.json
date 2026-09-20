@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-20T12:42:48.100818+00:00",
+  "generated_at": "2026-09-20T12:53:05.588956+00:00",
   "genres": [
     "Afro House",
     "Ambient",
@@ -38,6 +38,7 @@
     "Synthwave",
     "Tech House",
     "Techno",
+    "Test",
     "Trance",
     "Trap",
     "Tropical House",
@@ -115,6 +116,906 @@
       "size": 131,
       "created_at": "2026-09-19T19:03:41+03:00",
       "updated_at": "2026-09-19T19:03:41+03:00"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 001.rgti",
+      "path": "RegionTemplates/Test/Test Template 001.rgti",
+      "sha": "3c617d0cf235c225859d3c99c62823167fb59842",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 002.rgti",
+      "path": "RegionTemplates/Test/Test Template 002.rgti",
+      "sha": "240468235278ef5b108a222ea16b87a2ed4e2dd3",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 003.rgti",
+      "path": "RegionTemplates/Test/Test Template 003.rgti",
+      "sha": "1d0d5af5386712b9550ea36c876f39e85d3b37b6",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 004.rgti",
+      "path": "RegionTemplates/Test/Test Template 004.rgti",
+      "sha": "b46e3bf584ee98ca542f9dd233067dbc9854f908",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 005.rgti",
+      "path": "RegionTemplates/Test/Test Template 005.rgti",
+      "sha": "1a3ad2ed595fe20d7e698db3be7097c22e307d49",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 006.rgti",
+      "path": "RegionTemplates/Test/Test Template 006.rgti",
+      "sha": "a31d153def7169a00055cec564c8f390cbd008db",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 007.rgti",
+      "path": "RegionTemplates/Test/Test Template 007.rgti",
+      "sha": "fb63f125212274dee1205ec2d5f3f8bdb8ec56c7",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 008.rgti",
+      "path": "RegionTemplates/Test/Test Template 008.rgti",
+      "sha": "dda6754d79d6b65f822b11fa257364528857a3a2",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 009.rgti",
+      "path": "RegionTemplates/Test/Test Template 009.rgti",
+      "sha": "03d1c2668ec6bb778e23c2332aba975158e13427",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 010.rgti",
+      "path": "RegionTemplates/Test/Test Template 010.rgti",
+      "sha": "bb1d5cad67d7562f311416a0deed5d16133fbdf6",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 011.rgti",
+      "path": "RegionTemplates/Test/Test Template 011.rgti",
+      "sha": "4e7f941202eab4d52730adcb6687f2e983cdd060",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 012.rgti",
+      "path": "RegionTemplates/Test/Test Template 012.rgti",
+      "sha": "40793695d380179c4bd3550266f7ce8e12c12ad7",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 013.rgti",
+      "path": "RegionTemplates/Test/Test Template 013.rgti",
+      "sha": "a1e0e9a9488e24ddea30168c778e023f7c3e2cee",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 014.rgti",
+      "path": "RegionTemplates/Test/Test Template 014.rgti",
+      "sha": "3069c0b7a6a4873f5ab704c313d9d07af43ba02f",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 015.rgti",
+      "path": "RegionTemplates/Test/Test Template 015.rgti",
+      "sha": "51705fd6617cce902c3853a7d4fbb89e6b33c78c",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 016.rgti",
+      "path": "RegionTemplates/Test/Test Template 016.rgti",
+      "sha": "985bd86838108b062bfe9e0a057e1141b7337666",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 017.rgti",
+      "path": "RegionTemplates/Test/Test Template 017.rgti",
+      "sha": "193a0e247c379269c2aa460eeb3500107dc190ba",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 018.rgti",
+      "path": "RegionTemplates/Test/Test Template 018.rgti",
+      "sha": "8a2f9372b663873e3b2d6256bbe6cd6774402e07",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 019.rgti",
+      "path": "RegionTemplates/Test/Test Template 019.rgti",
+      "sha": "8c3374e74388aed7fae5284741901fa774504daf",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 020.rgti",
+      "path": "RegionTemplates/Test/Test Template 020.rgti",
+      "sha": "38d276c1c50833937ebdfa2c05a718321cb5c6b9",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 021.rgti",
+      "path": "RegionTemplates/Test/Test Template 021.rgti",
+      "sha": "8491a0405a93f7cd73c33869360a0b8be71be9c7",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 022.rgti",
+      "path": "RegionTemplates/Test/Test Template 022.rgti",
+      "sha": "b9fd323fd3486cf6839f5185e468a4381d17c5ed",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 023.rgti",
+      "path": "RegionTemplates/Test/Test Template 023.rgti",
+      "sha": "9c67201864481711c7141ced914a6910962769e6",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 024.rgti",
+      "path": "RegionTemplates/Test/Test Template 024.rgti",
+      "sha": "e8496e428159b71aacf362f81e02609ffe20f537",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 025.rgti",
+      "path": "RegionTemplates/Test/Test Template 025.rgti",
+      "sha": "fb8975d81e51c022d5e440c2ceaa42313284f065",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 026.rgti",
+      "path": "RegionTemplates/Test/Test Template 026.rgti",
+      "sha": "7fb0fd6f47bd60c6a3603b218c3e67eab528c93e",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 027.rgti",
+      "path": "RegionTemplates/Test/Test Template 027.rgti",
+      "sha": "b402fde155306b4494ea9e3d26b29a1afe6c6440",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 028.rgti",
+      "path": "RegionTemplates/Test/Test Template 028.rgti",
+      "sha": "ab57f0437b572aefbcc3c8215252c993548317c8",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 029.rgti",
+      "path": "RegionTemplates/Test/Test Template 029.rgti",
+      "sha": "e7d7fef0d74de7aee0e3b1df4474f8db98521bb4",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 030.rgti",
+      "path": "RegionTemplates/Test/Test Template 030.rgti",
+      "sha": "a7a55da58f0638f1f8e8b1d3761740788e90d730",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 031.rgti",
+      "path": "RegionTemplates/Test/Test Template 031.rgti",
+      "sha": "f86d5111aa9371dd96f68bfeed2c371ffc12989b",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 032.rgti",
+      "path": "RegionTemplates/Test/Test Template 032.rgti",
+      "sha": "ceec6d66dab6acc632707d20d6198dbe1e94e587",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 033.rgti",
+      "path": "RegionTemplates/Test/Test Template 033.rgti",
+      "sha": "6c8c6234b9c4bbf6376787b34de141e78acd50c0",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 034.rgti",
+      "path": "RegionTemplates/Test/Test Template 034.rgti",
+      "sha": "1b1b65158907a1405e292aee1a899ebe9d429e6c",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 035.rgti",
+      "path": "RegionTemplates/Test/Test Template 035.rgti",
+      "sha": "916e7d984b484e4274e0936a4796a8c2cf470724",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 036.rgti",
+      "path": "RegionTemplates/Test/Test Template 036.rgti",
+      "sha": "358548e6d4b37161025aa40d118a7958b74385d9",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 037.rgti",
+      "path": "RegionTemplates/Test/Test Template 037.rgti",
+      "sha": "e3096bb0d44919f7492b2259c08272683cb0b2a0",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 038.rgti",
+      "path": "RegionTemplates/Test/Test Template 038.rgti",
+      "sha": "d77cf59174bb3871dc76e8882cd97c74921fbf3f",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 039.rgti",
+      "path": "RegionTemplates/Test/Test Template 039.rgti",
+      "sha": "d6220f7896193084d53419602b4db4d8101f8144",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 040.rgti",
+      "path": "RegionTemplates/Test/Test Template 040.rgti",
+      "sha": "ca7c27681efcb411ecd2c50b85c7d546f8d9545b",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 041.rgti",
+      "path": "RegionTemplates/Test/Test Template 041.rgti",
+      "sha": "11a82b4fdb91ebcb5fe0398e6816ea2c02a0a0d2",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 042.rgti",
+      "path": "RegionTemplates/Test/Test Template 042.rgti",
+      "sha": "7928cb1667086abc35b6c37021448965b6840761",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 043.rgti",
+      "path": "RegionTemplates/Test/Test Template 043.rgti",
+      "sha": "510d259dbca6a68ea14d841a9c74e1a0c2d53493",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 044.rgti",
+      "path": "RegionTemplates/Test/Test Template 044.rgti",
+      "sha": "42b9b6c08145e539b3816d5f2b3f0d7689362107",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 045.rgti",
+      "path": "RegionTemplates/Test/Test Template 045.rgti",
+      "sha": "d0d0524f9bfe0ea03ee15a21a8f5ed872cb9cf34",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 046.rgti",
+      "path": "RegionTemplates/Test/Test Template 046.rgti",
+      "sha": "53a04f2d97cb8f68992b3b885c531872b5afd485",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 047.rgti",
+      "path": "RegionTemplates/Test/Test Template 047.rgti",
+      "sha": "3767156b47413d6af7c9b29f0efe8cdca6b3dae8",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 048.rgti",
+      "path": "RegionTemplates/Test/Test Template 048.rgti",
+      "sha": "3e1668ae0db8791302ac63935f71df4e3f6f1e3f",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 049.rgti",
+      "path": "RegionTemplates/Test/Test Template 049.rgti",
+      "sha": "462aa16805d909ccac3ddcee31fa6a7319c2407a",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 050.rgti",
+      "path": "RegionTemplates/Test/Test Template 050.rgti",
+      "sha": "283c9a5dee8aa5a15d0f59fa9f108df2a79c264d",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 051.rgti",
+      "path": "RegionTemplates/Test/Test Template 051.rgti",
+      "sha": "a2160df6a5ef610456fdb2da92d648350379c761",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 052.rgti",
+      "path": "RegionTemplates/Test/Test Template 052.rgti",
+      "sha": "cbfca08d3a5f114ab175214ca3542f82d700c352",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 053.rgti",
+      "path": "RegionTemplates/Test/Test Template 053.rgti",
+      "sha": "2e40953e21291c83f64300f7aa6c9ed57b913e5b",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 054.rgti",
+      "path": "RegionTemplates/Test/Test Template 054.rgti",
+      "sha": "eeaed17c13ff52e693a546704a93703fb7163625",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 055.rgti",
+      "path": "RegionTemplates/Test/Test Template 055.rgti",
+      "sha": "47512d81dfac3579b2dacd1f1ca5bc8622342ad8",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 056.rgti",
+      "path": "RegionTemplates/Test/Test Template 056.rgti",
+      "sha": "fb5c2b3fb00df21612307dc1b70ebcc8c63b77d4",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 057.rgti",
+      "path": "RegionTemplates/Test/Test Template 057.rgti",
+      "sha": "36b1d6f08a3435ef54ba20f0469f9620ec42ccb2",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 058.rgti",
+      "path": "RegionTemplates/Test/Test Template 058.rgti",
+      "sha": "5ef1a2d2ab7d98b5e15da6bfef751a63a274069e",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 059.rgti",
+      "path": "RegionTemplates/Test/Test Template 059.rgti",
+      "sha": "17c7f588c1649ff99390dec8a5cfc4c76a9d15c0",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 060.rgti",
+      "path": "RegionTemplates/Test/Test Template 060.rgti",
+      "sha": "3dcabbb603c15dae249681ae9210fb5fcc1e53e7",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 061.rgti",
+      "path": "RegionTemplates/Test/Test Template 061.rgti",
+      "sha": "d1d777e5cf4d9fde7a10fb0e84d0f9c58ae29ae7",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 062.rgti",
+      "path": "RegionTemplates/Test/Test Template 062.rgti",
+      "sha": "49a2f11aad97633da76f80802d0655395afa8526",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 063.rgti",
+      "path": "RegionTemplates/Test/Test Template 063.rgti",
+      "sha": "4c08adea9b390a94e35d4a70fdbde82c6280bf1d",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 064.rgti",
+      "path": "RegionTemplates/Test/Test Template 064.rgti",
+      "sha": "c4fd40cedc40455603598a6911f7b7c4e9131382",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 065.rgti",
+      "path": "RegionTemplates/Test/Test Template 065.rgti",
+      "sha": "aa4da7a1bf05155d4e3829d45621ad462c06c151",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 066.rgti",
+      "path": "RegionTemplates/Test/Test Template 066.rgti",
+      "sha": "da40f386f85a7e7a84daf1fc4a6e51b782665aac",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 067.rgti",
+      "path": "RegionTemplates/Test/Test Template 067.rgti",
+      "sha": "527bfb4e141ed3d32513e0b83d9720fd885ac8aa",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 068.rgti",
+      "path": "RegionTemplates/Test/Test Template 068.rgti",
+      "sha": "4c105371bc1a099f4d8fc908c11ca91b49343c36",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 069.rgti",
+      "path": "RegionTemplates/Test/Test Template 069.rgti",
+      "sha": "21d016f987fe26ffaeb170982ccba46b57ff23ab",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 070.rgti",
+      "path": "RegionTemplates/Test/Test Template 070.rgti",
+      "sha": "99d7ee9ce8ba2fd697eeee44d6a0dbd5b18e6f53",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 071.rgti",
+      "path": "RegionTemplates/Test/Test Template 071.rgti",
+      "sha": "2655e3142fe284b00043ede3764076191ef5d057",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 072.rgti",
+      "path": "RegionTemplates/Test/Test Template 072.rgti",
+      "sha": "7ae482398883a60f22632bbee0936a89680d9e3a",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 073.rgti",
+      "path": "RegionTemplates/Test/Test Template 073.rgti",
+      "sha": "36da56027aecfe5c5a77215d563e8ed99cc7e88e",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 074.rgti",
+      "path": "RegionTemplates/Test/Test Template 074.rgti",
+      "sha": "d60943b49265afdbbc91c374b209b9a031ade482",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 075.rgti",
+      "path": "RegionTemplates/Test/Test Template 075.rgti",
+      "sha": "f352b2cd90005b89f044c25b5d4db0ecf46a312c",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 076.rgti",
+      "path": "RegionTemplates/Test/Test Template 076.rgti",
+      "sha": "1f810d4ca5f6773d0a97ee3dde26638491b7d648",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 077.rgti",
+      "path": "RegionTemplates/Test/Test Template 077.rgti",
+      "sha": "ec3aabb1648aa0b17b7e87009867e51056cd270d",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 078.rgti",
+      "path": "RegionTemplates/Test/Test Template 078.rgti",
+      "sha": "fd74e39f5f1c8fd5ed14ac4f0197b75a0bc9eaa9",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 079.rgti",
+      "path": "RegionTemplates/Test/Test Template 079.rgti",
+      "sha": "8706a697b93401ccee32097aaed02c34a58e7608",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 080.rgti",
+      "path": "RegionTemplates/Test/Test Template 080.rgti",
+      "sha": "32496926f8ccb068bf1a1f9698caa00e03d73ac5",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 081.rgti",
+      "path": "RegionTemplates/Test/Test Template 081.rgti",
+      "sha": "a226de1b7ae76a72ed54ddf968a3042ac01ca85d",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 082.rgti",
+      "path": "RegionTemplates/Test/Test Template 082.rgti",
+      "sha": "5a714b1cd762faeaf709550c885a1e8288867f46",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 083.rgti",
+      "path": "RegionTemplates/Test/Test Template 083.rgti",
+      "sha": "1c6a82d0c0c137a63b47a6b287e8ab4934f18b33",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 084.rgti",
+      "path": "RegionTemplates/Test/Test Template 084.rgti",
+      "sha": "f28007dd6204ff68a3e51568065577bb08e2828e",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 085.rgti",
+      "path": "RegionTemplates/Test/Test Template 085.rgti",
+      "sha": "ea566705700c3b0143d490a3742fa618520bdb6c",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 086.rgti",
+      "path": "RegionTemplates/Test/Test Template 086.rgti",
+      "sha": "503faef9d8052da6a60257df046312662842cb8e",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 087.rgti",
+      "path": "RegionTemplates/Test/Test Template 087.rgti",
+      "sha": "3571146d91ceb6bd67224db06dc516f3cb019a15",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 088.rgti",
+      "path": "RegionTemplates/Test/Test Template 088.rgti",
+      "sha": "ee74b16b4d9556d51a076739f1c4640e1b2865af",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 089.rgti",
+      "path": "RegionTemplates/Test/Test Template 089.rgti",
+      "sha": "f5fc77702f32b16fbd8f32a02b3bb1082819326b",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 090.rgti",
+      "path": "RegionTemplates/Test/Test Template 090.rgti",
+      "sha": "a5a40518fb0539efede880db06a4bece7d472bda",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 091.rgti",
+      "path": "RegionTemplates/Test/Test Template 091.rgti",
+      "sha": "190bed2dbf0e314690dc6028f687b116ef6be7ca",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 092.rgti",
+      "path": "RegionTemplates/Test/Test Template 092.rgti",
+      "sha": "a77ddb5a6ae778716dfdc30670a852789069144d",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 093.rgti",
+      "path": "RegionTemplates/Test/Test Template 093.rgti",
+      "sha": "83ee1de444327925e2cf85c0087a9fafdc4ef609",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 094.rgti",
+      "path": "RegionTemplates/Test/Test Template 094.rgti",
+      "sha": "bd503d2e7390dfc0864fc38458889fd492e1ccf5",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 095.rgti",
+      "path": "RegionTemplates/Test/Test Template 095.rgti",
+      "sha": "c5ff1cd7e65facefd69b8689d194c32006c4c6f5",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 096.rgti",
+      "path": "RegionTemplates/Test/Test Template 096.rgti",
+      "sha": "caec1f07f56a90d9526c2700ad8b6550de4ba77a",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 097.rgti",
+      "path": "RegionTemplates/Test/Test Template 097.rgti",
+      "sha": "5e5850ba717a00c54c228af589deac6bb41a2089",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 098.rgti",
+      "path": "RegionTemplates/Test/Test Template 098.rgti",
+      "sha": "f939b1ac29517fb87fc7722b4a7f1c22c928c309",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 099.rgti",
+      "path": "RegionTemplates/Test/Test Template 099.rgti",
+      "sha": "411dab4bd0ea374c4ecfdfc1fddbcd48bde65160",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
+    },
+    {
+      "genre": "Test",
+      "name": "Test Template 100.rgti",
+      "path": "RegionTemplates/Test/Test Template 100.rgti",
+      "sha": "548778db63d851d7df3922640046f729ce95dd04",
+      "size": 319,
+      "created_at": "2026-09-20T12:52:12Z",
+      "updated_at": "2026-09-20T12:52:12Z"
     }
   ]
 }
